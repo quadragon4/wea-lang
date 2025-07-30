@@ -8,4 +8,4 @@
 
 ### Character
 
-## Custom Data Types 
+## Custom Data Types

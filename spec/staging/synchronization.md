@@ -1,2 +1,4 @@
 # Proposal: Synchronization
-<!-- locks, mutexes, atomics, barriers etc ->
+<!-- locks, mutexes, atomics, barriers etc -->
+
+## Synchronization Primitives

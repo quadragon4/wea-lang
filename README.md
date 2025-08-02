@@ -1,6 +1,6 @@
 # wea-lang
 
-Es una wea.
+The Wea programming language specification. Es una wea.
 
 ## Table of Contents:
 

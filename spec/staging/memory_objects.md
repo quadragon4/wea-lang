@@ -58,4 +58,22 @@ In order to declare a variable as *mutable*, it **MUST** be specified using the 
  
 ## References, Copies & Views
 
+### References
+A _reference_ a data type that store a reference to a value.
+
+Also, the operator  ```=```  creates a reference from other reference or value.
+
+If a _reference_ A is previouly created, and _reference_ B is created referencing A, both references **MUST** reference the same value.
+
+### Copies
+### Views
+
+Examples:
+```
+let someValue : f64 = 0.4;
+let someValueCopy = someValue;
+let view someValueView = someValue;
+let ref someValueRef = someValue;
+```
+
 ## Memory Blocks

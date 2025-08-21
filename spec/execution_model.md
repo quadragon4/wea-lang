@@ -2,7 +2,7 @@
 
 ## Control Flow
 
-The *control flow* structures are special statement set that leads the flow of statements execution.
+The *control flow* structures are special statement set that leads the flow of statements' execution.
 
 ### Conditionals
 
@@ -18,12 +18,11 @@ if condition {
 }
 ```
 
-
 ### Loops
 
 ### Conditional Loops
 
-A *conditional loop* is a control structure that execute a set of statements while a condition is true.
+A *conditional loop* is a control structure that executes a set of statements while a condition is true.
 
 There is one conditional loop available, that is the *while* statement.
 

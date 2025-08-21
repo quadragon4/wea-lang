@@ -18,7 +18,7 @@ let [global|shared|local] [mut] variableName : variableType = value;
 ```
 *Ebnf declaration:*
 ```ebnf
-variable = "let", (|"global"|"shared"|"local"), (|"mut") ,identifier, ":", type, "=", value, ";" 
+variable = "let", (|"global"|"shared"|"local"), (|"mut") ,identifier, ":", type, "=", value, ";"
 ```
 
 ### Lifetime
@@ -40,11 +40,11 @@ Examples:
 ```
 let global helloString = "hello";
 let shared counter : u32 = 20;
-let local niceValue : f64 = 0.333; 
+let local niceValue : f64 = 0.333;
 ```
 
 >[!NOTE]
-> The *cache preference* keywords suggest to the implementation where the variables be allocated *preferably*, but do not give guarantees about where the variable is allocated. 
+> The *cache preference* keywords suggest to the implementation where the variables be allocated *preferably*, but do not give guarantees about where the variable is allocated.
 
 ### Visibility
 
@@ -55,7 +55,7 @@ If a variable is permitted to change its value after initilization, the variable
 A *mutable* variable **MUST** allow its value to be changed, otherwise, the variable is *inmmutable*.
 
 In order to declare a variable as *mutable*, it **MUST** be specified using the *mut* keyword.
- 
+
 ## References, Copies & Views
 
 ### References

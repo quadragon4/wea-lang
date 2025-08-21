@@ -8,18 +8,18 @@ The size of each data type **IS** calculated by the next formula,
     size = (size of all native data types fields) + (size of all compound data types fields)
 ```
 
-Properties size (whether at runtime or compile time) **MUST NOT** be included as part of the data type size. 
+Properties size (whether at runtime or compile time) **MUST NOT** be included as part of the data type size.
 
 To access to the size of a data type, call:
 ```
     sizeof(datatype)
 ```
-Also, data types are layouts of _variables_ (defined at [Memory Objects](staging/memory_objects.md)), 
+Also, data types are layouts of _variables_ (defined at [Memory Objects](staging/memory_objects.md)),
 to access to the size of a data type of a variable, call:
 
 ```
     sizeof(variable)
-``` 
+```
 
 >[!NOTE]
 > _sizeof(variable)_ returns size of the data type of a variable at **compile time**, so, if the variable has any allocations,
@@ -30,13 +30,13 @@ Implementations **MUST** use the assigned sizes of each data type.
 
 ## Enumerations:
 
-An *enumeration* data type is a collection of _enumerals_, the values 
+An *enumeration* data type is a collection of _enumerals_, the values
 of each *enumeral* **MUST** be known at compile time.
 
 *Syntax:*
 
 ```ebnf
-    enumeration = "enum", identifier, ( | (":", type )) "{", { enumeral },"}", ";" ; 
+    enumeration = "enum", identifier, ( | (":", type )) "{", { enumeral },"}", ";" ;
     enumeral = identifier, ":", (type|constantValue) ;
 ```
 
@@ -57,15 +57,15 @@ Implementations **MUST** ensure that boolean data type use these values only.
 
 ### Numerics
 
-A *numeric* data type is a native data type that represent a number at machine level, also, 
+A *numeric* data type is a native data type that represent a number at machine level, also,
 *floating point numeric* data types **MUST** use the IEEE 754 standard.
 
 | Bitsize  | signed integer | unsigned integer | float |
 |-|-|-|-|
-| 16   |  i16  | u16  | f16  | 
-| 32   |  i32  | u32  | f32  | 
+| 16   |  i16  | u16  | f16  |
+| 32   |  i32  | u32  | f32  |
 | 64   |  i64  | u64  | f64  |
-| 128  |  i128 | u128 | f128 | 
+| 128  |  i128 | u128 | f128 |
 
 >[!IMPORTANT]
 > _unsigned float_ **IS NOT** part of the specification due to _float_ data type follows the IEEE 754 standard.

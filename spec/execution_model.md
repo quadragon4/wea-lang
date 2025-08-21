@@ -8,7 +8,7 @@ The *control flow* structures are special statement set that leads the flow of s
 
 A *conditional* is a control structure that decides if a set of statements **MUST** be executed or not.
 
-There are two conditional structures, *if* statement and *switch* statements. 
+There are two conditional structures, *if* statement and *switch* statements.
 
 To declare an *if* statement, use:
 

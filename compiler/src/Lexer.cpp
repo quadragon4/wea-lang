@@ -65,10 +65,10 @@ constexpr TokenType toEnum(std::string_view key)
     case fnv1a("view"): return TokenType::View;
     case fnv1a("mut"): return TokenType::Mut;
     case fnv1a("ref"): return TokenType::Ref;
-    case fnv1a("Type"): return TokenType::Type;
-    case fnv1a("Proc"): return TokenType::Proc;
-    case fnv1a("Pack"): return TokenType::Pack;
-    case fnv1a("Record"): return TokenType::Record;
+    case fnv1a("type"): return TokenType::Type;
+    case fnv1a("proc"): return TokenType::Proc;
+    case fnv1a("pack"): return TokenType::Pack;
+    case fnv1a("record"): return TokenType::Record;
     case fnv1a("if"): return TokenType::If;
     case fnv1a("while"): return TokenType::While;
     case fnv1a("loop"): return TokenType::Loop;
@@ -115,6 +115,10 @@ auto Lexer::getTokens(const std::vector<std::string>& tokenLitList) -> std::vect
     {
         auto tokenType = toEnum(tokenLit);
         // TODO: manage other cases
+        // if ()
+        
+
+        // tokenList.push_back();
     }
 
     return tokenList;

@@ -16,8 +16,7 @@ namespace Wea
         Unknown,
 
         Identifier,
-        ConstValue,
-        DataType,
+        Literal,
         // variable related keywords
         Let,
         Global,

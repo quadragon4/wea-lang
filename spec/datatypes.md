@@ -97,3 +97,6 @@ type light {
     f64 intensity;
 };
 ```
+### Types Memory Layout
+
+*Memory layout* (also referred as *layout*) is the 
